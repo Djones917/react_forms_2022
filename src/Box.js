@@ -5,6 +5,7 @@ class Box extends Component {
         return (
             <div style={{
                 height: `${this.props.height}em`,
+                width: `${this.props.width}em`,
             }}>
 
             </div>

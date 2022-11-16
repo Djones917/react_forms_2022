@@ -11,7 +11,7 @@ class Box extends Component {
             }}>
             </div>
             </div>
-        )
+        );
     }
 }
 

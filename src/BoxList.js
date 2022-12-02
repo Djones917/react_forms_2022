@@ -10,6 +10,7 @@ export default class BoxList extends Component {
         const boxes = this.state.boxes.map(boxes => {
             <Box 
               width = {boxes.width}
+              height = {boxes.height}
             />
         })
         return (

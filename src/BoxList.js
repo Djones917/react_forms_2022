@@ -7,6 +7,11 @@ export default class BoxList extends Component {
         this.state = {boxes: [{width: 10, height: 40, color: blue}]}
     }
     render() {
+        const boxes = this.state.boxes.map(boxes => {
+            <Box 
+              width = {boxes.width}
+            />
+        })
         return (
             <div>
                 <h1>Color Box Maker</h1>

@@ -11,6 +11,7 @@ export default class BoxList extends Component {
             <Box 
               width = {boxes.width}
               height = {boxes.height}
+              color = {boxes.color}
             />
         })
         return (

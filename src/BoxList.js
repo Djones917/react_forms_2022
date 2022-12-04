@@ -7,11 +7,11 @@ export default class BoxList extends Component {
         this.state = {boxes: [{width: 10, height: 40, color: blue}]}
     }
     render() {
-        const boxes = this.state.boxes.map(boxes => {
+        const boxes = this.state.boxes.map(box => {
             <Box 
-              width = {boxes.width}
-              height = {boxes.height}
-              color = {boxes.color}
+              width = {box.width}
+              height = {box.height}
+              color = {box.color}
             />
         })
         return (

@@ -1,17 +1,17 @@
 import React, {Component } from 'react';
 import Box from './Box';
 
-export default class BoxList extends Component {
+ class BoxList extends Component {
     constructor(props){
         super(props);
-        this.state = {boxes: [{width: 10, height: 40, color: blue}]}
+        this.state = { boxes: [{ width: 10, height: 40, color: orange }] };
     }
     render() {
-        const boxes = this.state.boxes.map(box => {
+        const boxes = this.state.boxes.map(boxes => {
             <Box 
-              width = {box.width}
-              height = {box.height}
-              color = {box.color}
+              width = {boxes.width}
+              height = {boxes.height}
+              color = {boxes.color}
             />
         })
         return (

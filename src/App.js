@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import Box from './Box';
-import './App.css';
+import React, { Component } from "react";
+import BoxList from "./BoxList";
+import "./App.css";
 
-function App() {
-  return (
-    <div>
-      <Box height={10} width={20} color="purple" />
-      <Box height={20} width={10} color="green" />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <BoxList />
+      </div>
+    );
+  }
 }
 
 export default App;
